@@ -22,5 +22,15 @@
     "download": "https://github.com/jcubic/jquery.terminal/releases",
     "dependencies": {
         "jquery": ">=1.5"
+    },
+    "devDependencies": {
+        "chai": "~1.9.1",
+        "grunt-shell": "~0.6.4",
+        "grunt-contrib-coffee": "~0.10.1",
+        "jsdom":"*",
+        "jquery":"*",
+        "jasmine-node":"*",
+        "grunt-jasmine-node":"*",
+        "grunt-contrib-uglify":"*"
     }
 }
