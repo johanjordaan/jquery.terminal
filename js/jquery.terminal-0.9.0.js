@@ -41,7 +41,7 @@
  * Copyright (c) 2007-2013 Alexandru Marasteanu <hello at alexei dot ro>
  * licensed under 3 clause BSD license
  *
- * Date: Thu May 15 12:12:54 UTC 2014
+ * Date: Thu May 15 12:16:30 UTC 2014
  *
  */
 
@@ -2524,7 +2524,7 @@
     // :: Terminal Signatures
     // -----------------------------------------------------------------------
     var signatures = [
-        ['jQuery Terminal', '(c) 2011-2013 jcubic'],
+        ['jQuery Terminal', '(c) 2011-2014 jcubic'],
         ['jQuery Terminal Emulator' + (version_set ? ' v. ' + version : ''),
          copyright.replace(/ *<.*>/, '')],
         ['jQuery Terminal Emulator' + (version_set ? version_string : ''),
