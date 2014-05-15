@@ -6,6 +6,7 @@ module.exports = (grunt) ->
       options :
       #  banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
         preserveComments : 'some'
+        mangle : true
       
       build : 
         src : 'js/jquery.terminal-<%= pkg.version %>.js',
@@ -24,7 +25,7 @@ module.exports = (grunt) ->
       bower_json:
         command: 'sed -e "s/{{VER}}/<%= pkg.version %>/g" bower.in > bower.json'
       version_terminal:
-        command: 'sed -e "s/{{VER}}/<%= pkg.version %>/g" -e "s/{{DATE}}/`date -uR`/g" js/jquery.terminal-src.js > js/jquery.terminal-<%= pkg.version %>.js'
+        command: 'sed -e "s/{{VER}}/<%= pkg.version %>/g" -e "s/{{DATE}}/`date -u`/g" js/jquery.terminal-src.js > js/jquery.terminal-<%= pkg.version %>.js'
       create_min_copy:  
         command: 'cp js/jquery.terminal-<%= pkg.version %>.min.js js/jquery.terminal-min.js'  
       terminal_jquery_json:
